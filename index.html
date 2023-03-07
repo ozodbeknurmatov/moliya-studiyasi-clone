@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moliya</title>
+    <link rel="stylesheet" href="./app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <div class="saturated container">
+                <div class="logo">
+                    <img src="/images/Group.svg" alt="">
+                    <div class="begin">
+                        <h1>Moliya</h1>
+                        <h1>Studiyasi</h1>
+                    </div>
+                </div>
+                <ul class="menu">
+                    <li><a href="#">
+                            Kurslar
+                        </a></li>
+                    <li><a href="#">
+                            Natijalar
+                        </a></li>
+                    <li><a href="#">
+                            Jamoa
+                        </a></li>
+                    <li><a href="#">
+                            Online darslar
+                        </a></li>
+                    <li><a href="#">
+                            Kontakt
+                        </a></li>
+                </ul>
+                <div class="lists">
+                    <a href="#">Ro’yxatdan o’tish</a>
+                    <button class="button">Kirish <img src="/images/vc.svg" alt=""></button>
+                </div>
+                <div class="open">
+                    <i class='bx bx-menu open__btn'></i>
+                    <i class='bx bx-x closeBtn' onclick="closeNav()"></i>
+                </div>
+            </div>
+         
+            <div class="modal">
+                <div class="modal__overlay"></div>
+                <div class="modal__body">
+                    <p>Ma’lumotlardan to’liq foydalanish uchun</p>
+                    <h4>Formani to'ldiring</h4>
+                    <h1>Kirish</h1>
+                    <form action="#">
+                        <input name="phone" maxlength="12" placeholder="Telefon raqam" required="">
+                        <input name="password" type="password" placeholder="Parol kiriting" required="">
+                        <div
+                            style="color: rgb(55, 108, 187); margin-right: -190px; margin-bottom: 10px; font-weight: 600; cursor: pointer;">
+                            <div>Parolni unutdingizmi?</div>
+                        </div>
+                        <button class="login__btn">Kirish</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="more">
+            <div class="most container">
+                <div class="most_of_right animate__animated animate__bounceInLeft ">
+                    <h1>Moliya Studiyasi —</h1>
+                    <h2>Bugalteriya Maktabi</h2>
+                    <p>Malakali ustozlardan dars oling. Imtihonlarni muvaffaqiyatli topshiring-u, ish o'rniga ega
+                        bo'ling!</p>
+                    <button class="button">Kursga yozilish <img src="/images/bb.svg" alt=""></button>
+                </div>
+                <div class="most_of_left">
+                    <img class="animate__animated animate__bounceInDown" src="/images/АКК.png" alt="">
+                </div>
+            </div>
+            <div class="bottom_tag container">
+                <div class="first">
+                    <img src="/images/fr1.svg" alt="">
+                    <h2>Ish bilan
+                        taʼminlaymiz!</h2>
+                </div>
+                <div class="first">
+                    <img src="/images/fr2.svg" alt="">
+                    <h2>4 oy davomida
+                        Buxgalteriya va
+                        1C dasturi</h2>
+                </div>
+                <div class="first">
+                    <img src="/images/fr3.svg" alt="">
+                    <h2>O’qish yakunida
+                        diplom va sertifikat
+                        beriladi</h2>
+                </div>
+            </div>
+        </div>
+        <div class="since">
+            <div class="card">
+                <img class="lamp" src="/images/fr1.svg" alt="">
+                <h1>Umumiy Bug'alteriya</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim.</p>
+                <div class="time">
+                    <img src="/images/clock.svg" alt="">
+                    <h3>Davomiyligi: 4 oy</h3>
+                </div>
+                <div class="time">
+                    <img src="/images/clock.svg" alt="">
+                    <h3>12-15 kishilik guruh</h3>
+                </div>
+                <div class="time">
+                    <img src="/images/clock.svg" alt="">
+                    <h3>0 dan balansgacha va 1C dasturi</h3>
+                </div>
+                <button class="button">Kursga yozilish <img src="/images/kk.svg" alt=""></button>
+            </div>
+            <div class="card">
+                <img class="lamp" src="/images/fr2.svg" alt="">
+                <h1>Buxgalteriya -
+                    Individual</h1>
+                <p>Individual darslar o'quvchining bo'sh vaqtiga mos tarzda jadval asosida qo'yib beriladi. </p>
+                <div class="time">
+                    <img src="/images/clock.svg" alt="">
+                    <h3>Davomiyligi: 2-3 oy</h3>
+                </div>
+                <div class="time">
+                    <img src="/images/clock.svg" alt="">
+                    <h3>Yakka tartibda</h3>
+                </div>
+                <div class="time">
+                    <img src="/images/clock.svg" alt="">
+                    <h3>0 dan balansgacha
+                        va 1C dasturi</h3>
+                </div>
+                <button class="button">Kursga yozilish <img src="/images/kk.svg" alt=""></button>
+            </div>
+            <div class="card">
+                <img class="lamp" src="/images/hh.svg" alt="">
+                <h1>Buxgalteriya-
+                    Onlayn
+                </h1>
+                <p>Darslar ZOOM va ANY DESK dasturlari orqali olib boriladi. </p>
+                <div class="time">
+                    <img src="/images/clock.svg" alt="">
+                    <h3>Davomiyligi: 2 oy</h3>
+                </div>
+                <div class="time">
+                    <img src="/images/clock.svg" alt="">
+                    <h3>Yakka tartibda</h3>
+                </div>
+                <div class="time">
+                    <img src="/images/clock.svg" alt="">
+                    <h3>0 dan balansgacha
+                        va 1C dasturi</h3>
+                </div>
+                <button class="button">Kursga yozilish <img src="/images/kk.svg" alt=""></button>
+            </div>
+        </div>
+
+        <div class="employeer">
+            <div class="employment container">
+                <div class="infrom">
+                    <h3>So’z
+                        isboti bilan</h3>
+                    <h1>Bizning
+                        natijalar</h1>
+                    <img src="/images/llop.svg" alt="">
+                </div>
+                <div class="information">
+                    <div class="item">
+                        <img src="/images/Rectangle 16.png" alt="">
+                        <h1>Tohirova Fotima</h1>
+                        <div class="imaginaton">
+                            <img src="/images/small.svg" alt="">
+                            <h5>Ish bilan ta’minlangan</h5>
+                        </div>
+                        <p>Mashg'ulotlarni muvaffaqiyatli o'zlashtirib, imtihonlarni a'lo bahoga topshirdi. Natijada
+                            o'quv markazimiz va'dasiga binoan Sardorni ish bilan ta'minladi. Hozirda u buxgalter
+                            sifatida mustaqil faoliyat olib bormoqda.
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="/images/Rectangle 16.png" alt="">
+                        <h1>Tohirova Fotima</h1>
+                        <div class="imaginaton">
+                            <img src="/images/small.svg" alt="">
+                            <h5>Ish bilan ta’minlangan</h5>
+                        </div>
+                        <p>Mashg'ulotlarni muvaffaqiyatli o'zlashtirib, imtihonlarni a'lo bahoga topshirdi. Natijada
+                            o'quv markazimiz va'dasiga binoan Sardorni ish bilan ta'minladi. Hozirda u buxgalter
+                            sifatida mustaqil faoliyat olib bormoqda.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="boss">
+            <div class="bosted">
+                <div class="objectes">
+                    <img src="/images/Untitled-1 copy 2.png" alt="">
+                    <h1>Nosirjon Sodiqov</h1>
+                    <p>Moliya Studiyasi rahbari</p>
+                </div>
+                <div class="objectes">
+                    <img src="/images/Untitled-1 copy 2.png" alt="">
+                    <h1>Nosirjon Sodiqov</h1>
+                    <p>Moliya Studiyasi rahbari</p>
+                </div>
+                <div class="objectes">
+                    <img src="/images/Untitled-1 copy 2.png" alt="">
+                    <h1>Nosirjon Sodiqov</h1>
+                    <p>Moliya Studiyasi rahbari</p>
+                </div>
+                <div class="objectes">
+                    <img src="/images/Untitled-1 copy 2.png" alt="">
+                    <h1>Nosirjon Sodiqov</h1>
+                    <p>Moliya Studiyasi rahbari</p>
+                </div>
+            </div>
+            <div class="circle">
+                <img src="/images/left.svg" alt="">
+                <div class="crip"></div>
+                <div class="crip"></div>
+                <div class="crip"></div>
+                <div class="crip"></div>
+                <img class="extrated" src="/images/right.svg" alt="">
+            </div>
+        </div>
+        
+        <div class="free__lessons container">
+            <div class="lesson1">
+                <h1>Bepul video-dars</h1>
+                <h4>Buxgalteriya sohasini o'rganish istagida bo'lganlar va sohada faoliyat olib borayotganlar uchun Moliya Studiyasi'ning YouTube sahifasiga Bepul video-darslar joylab boriladi.
+                </h4>
+                <p>Videodarslar nafaqat sizni yangi kasb o'rganishingizga, balki buxgalter sifatida malakangizni oshirishingizga ham xizmat qiladi.</p>
+                <button>Videodarslarni ko’rish <img src="/images/svf.svg" alt=""></button>
+            </div>
+            <div class="lesson2">
+                <img src="/images/youtube copy 1.png" alt="">
+            </div>
+        </div>
+
+        <div class="about_our">
+            <div class="half_text container">
+                <div class="past">
+                    <h1>Moliya Studiyasi?</h1>
+                    <h2>biz haqimizda...</h2>
+                </div>
+                <p>Moliya Studiyasi - O'zbekistondagi eng katta va sifatli ta'lim muassasasi. 10 yildan uzoq bo'lgan muddat davomida buxgalteriya sohasini o'rgatib, sohada yuqori malakali kadrlarni yetishtirib kelmoqda. Shu kunga qadar 7 000 dan ortiq o'quvchiga ta'lim bergan va kursni muvaffaqiyatni yakunlaganlarni ish bilan ta'minlab kelmoqda</p>
+            </div>
+            <div class="examples">
+                <img src="/images/Rectangle 30.png" alt="">
+                <img src="/images/Rectangle 28.png" alt="">
+                <img src="/images/Rectangle 31.png" alt="">
+                <img src="/images/Rectangle 32.png" alt="">
+                <img src="/images/Rectangle 31.png" alt="">
+                <img src="/images/Rectangle 28.png" alt="">
+                <img src="/images/Rectangle 30.png" alt="">
+                <img src="/images/Rectangle 32.png" alt="">
+            </div>
+        </div>
+
+        <div class="blogers container">
+            <div class="blog">
+                <h1>Bloglar</h1>
+                <button>Barchasini ko’rish <img src="/images/Vector (7).svg" alt=""></button>
+            </div>
+            <div class="log">
+                <img class="slent" src="/images/Vector (8).svg" alt="">
+                <div class="bloger">
+                    <img src="/images/Rectangle 42.png" alt="">
+                    <h1>Buxgalter bo’lishning afzalliklari</h1>
+                    <p>18.09.2022</p>
+                </div>
+                <div class="bloger">
+                    <img src="/images/Rectangle 42 (1).png" alt="">
+                    <h1>Maqsad; Harakat; 
+                        Natija</h1>
+                     <div class="little">
+                        <p>18.09.2022</p>
+                        <p>Video</p>
+                     </div>   
+                </div>
+                <div class="bloger">
+                    <img src="/images/Rectangle 42 (2).png" alt="">
+                    <h1>Dunyodagi eng boy 
+                        5ta buxgalter</h1>
+                     <p>18.09.2022</p>   
+                </div>
+                <div class="bloger">
+                    <img src="/images/Rectangle 42 (3).png" alt="">
+                    <h1>Ishga joylashgan bitiruvchi qiz</h1>
+                    <div class="little">
+                        <p>18.09.2022</p>
+                        <p>Video</p>
+                     </div>   
+                </div>
+                <img class="slent" src="/images/Vector (9).svg" alt="">
+            </div>
+            <div class="blog">
+                <h1>Bloglar</h1>
+                <button>Barchasini ko’rish <img src="/images/Vector (7).svg" alt=""></button>
+            </div>
+            <div class="log">
+                <img class="slent" src="/images/Vector (8).svg" alt="">
+                <div class="bloger">
+                    <img src="/images/Rectangle 42.png" alt="">
+                    <h1>Buxgalter bo’lishning afzalliklari</h1>
+                    <p>18.09.2022</p>
+                </div>
+                <div class="bloger">
+                    <img src="/images/Rectangle 42 (1).png" alt="">
+                    <h1>Maqsad; Harakat; 
+                        Natija</h1>
+                     <div class="little">
+                        <p>18.09.2022</p>
+                        <p>Video</p>
+                     </div>   
+                </div>
+                <div class="bloger">
+                    <img src="/images/Rectangle 42 (2).png" alt="">
+                    <h1>Dunyodagi eng boy 
+                        5ta buxgalter</h1>
+                     <p>18.09.2022</p>   
+                </div>
+                <div class="bloger">
+                    <img src="/images/Rectangle 42 (3).png" alt="">
+                    <h1>Ishga joylashgan bitiruvchi qiz</h1>
+                    <div class="little">
+                        <p>18.09.2022</p>
+                        <p>Video</p>
+                     </div>   
+                </div>
+                <img class="slent" src="/images/Vector (9).svg" alt="">
+            </div>
+        </div>
+
+        <div class="request container">
+            <div class="ban">
+                <h1>Kursga ro'yxatdan o'tish boshlandi</h1>
+                    <p>So'rov qoldiring va bizning mutaxassislarimiz siz bilan bog'lanadi va barcha savollaringizga javob beradi
+                        va sizni treningga ro'yxatdan o'tkazing</p>
+            </div>
+            <div class="presss">
+                <input type="text" placeholder="Ismingiz">
+            <input type="text" placeholder="Telefon raqamingiz">
+            <button>Yuborish</button>
+            </div>
+        </div>
+
+        <footer>
+            <div class="last container">
+                <div class="end_right">
+                  <div class="finish">
+                    <img src="/images/Group (1).svg" alt="">
+                    <h1>Moliya</h1>
+                    <h1>Studiyasi</h1>
+                  </div>
+                  <h4>+998 99 876 44 44</h4>
+                  <h5>Toshkent, st. Sharof Rashidov, 16A</h5>
+                  <p>info@moliyastudiyasi.uz</p>
+                  <div class="junior">
+                    <img src="/images/.svg" alt="">
+                    <img src="/images/.svg" alt="">
+                    <img src="/images/.svg" alt="">
+                    <img src="/images/.svg" alt="">
+                  </div>
+                </div>
+                <div class="end_centre">
+                    <img src="/images/Rectangle 144.png" alt="">
+                    <img src="/images/Rectangle 145.png" alt="">
+                </div>
+                <div class="end_left">
+                    <div class="catch">
+                        <a href="#
+                       ">Kurslar</a>
+                       <a href="#">Online darslar</a>
+                    </div>
+                    <div class="catch">
+                        <a href="#"> Natijalar</a>
+                        <a href="#">Yangiliklar</a>
+                    </div>
+                    <div class="catch">
+                        <a href="#">Jamoa </a>
+                        <a href="#">Bloglar</a>
+                    </div>
+                    <div class="catch">
+                        <a href="#">Biz haqimizda</a>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+    </div>
+
+
+    <a href="tel:998911234568" class="rang">
+        <div class="coccoc-alo-phone">
+            <div class="coccoc-alo-ph-circle"></div>
+            <div class="coccoc-alo-ph-circle-fill"></div>
+            <div class="coccoc-alo-ph-img-circle"></div>
+        </div>
+    </div>
+
+    <script src="./style.js"></script>
+
+</body>
+
+</html>
